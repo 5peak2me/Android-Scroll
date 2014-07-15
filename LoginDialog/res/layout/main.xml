@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff5f5f5" >
+
+    <include
+        android:id="@+id/layout_main_head"
+        layout="@layout/main_head" />
+
+    <LinearLayout
+        android:id="@+id/main_fragment_head_id"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_main_head"
+        android:background="@drawable/heard_hint_bg"
+        android:gravity="center" >
+
+        <ImageView
+            android:layout_width="6.0dip"
+            android:layout_height="6.0dip"
+            android:layout_marginRight="5.0dip"
+            android:background="@drawable/title_greed" />
+
+        <ViewFlipper
+            android:id="@+id/main_viewflipper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:flipInterval="2000" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="今日更新(每日只更新10条)"
+                android:textColor="#ffffffff" />
+        </ViewFlipper>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_mask"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/layout_main_head"
+        android:background="#55000000"
+        android:orientation="vertical"
+        android:visibility="gone" />
+    <!-- <Button -->
+    <!-- android:layout_alignParentBottom="true" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:text="ddd"/> -->
+
+    <com.example.logindialog.view.LoginView
+        android:id="@+id/mLoginView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+   
+</RelativeLayout>

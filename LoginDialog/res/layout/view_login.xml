@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/slidingLayer1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:background="#fff1f1f1"
+            android:gravity="center"
+            android:text="请登录"
+            android:textColor="#ff333333"
+            android:textSize="17.0sp" />
+
+        <ImageView
+            android:id="@+id/btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5.0dip"
+            android:background="@drawable/btn_close" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="30dip" >
+
+        <LinearLayout
+            android:id="@+id/ll_login_qq"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:background="@drawable/btn_bule"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5.0dip" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30.0dip"
+                android:background="@drawable/icon_qq" />
+
+            <ImageView
+                android:layout_width="1.0dip"
+                android:layout_height="19.0dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20.0dip"
+                android:alpha="20.0"
+                android:background="#50ffffff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15.0dip"
+                android:text="用QQ账号登录"
+                android:textColor="#ffffffff"
+                android:textSize="17.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_login_sina"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="15.0dip"
+            android:background="@drawable/btn_red"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5.0dip" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30.0dip"
+                android:background="@drawable/icon_sina" />
+
+            <ImageView
+                android:layout_width="1.0dip"
+                android:layout_height="19.0dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20.0dip"
+                android:background="#60ffffff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15.0dip"
+                android:text="用sina微博登录"
+                android:textColor="#ffffffff"
+                android:textSize="17.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
